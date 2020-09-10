@@ -1,10 +1,29 @@
-
 body, html {
+	margin:auto 0;
 	width:100%;
-	height:80%;
+	height:100%;
+}
 
 /*ADJUST IMAGE TO BACKGROUND*/
-  	background: url(header.jpg) no-repeat center center fixed; 
+#page-home{
+	background: url(header.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+#page-about{
+	background: url(headertwo.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#page-skills{
+	background: url(headertree.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
  	-o-background-size: cover;
@@ -21,19 +40,170 @@ p {
 	color:#3b5167;
 }
 
+
+
+
 .buffer{
 	height: 2rem;
 }
 
-.btn{
-	font-weight:700;
-	border-radius: 700px;
+.btn-primary {
+    color: #fff;
+    background-color: #3b5167;
+    border-color: #3b5167;
 }
 
 .btn-primary:hover{
-	border-width: 4px;
+	border-width: 2px;
+}
+
+/*NAV BAR STYLES*/
+.navbar-brand{
+	font-family: sans-serif;
+  	line-height: 1.15;
+  	color:#3b5167;
 }
 
 .navbar-nav{
 	margin-left: 6.2rem;
 }
+
+#mainNav {
+  	padding-top: 0.5rem;
+  	padding-bottom: 0.5rem;
+  	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ 	font-weight: 700;
+}
+
+#mainNav .navbar-brand {
+  font-size: 1.5rem;
+  color: white;
+}
+#mainNav .navbar-nav {
+  margin-top: 0.5rem;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: white;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #72A1C8;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #1abc9c;
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+
+/*CONTAINER STYLES*/
+.place{
+	display:flex;
+	height:90vh;
+}
+
+
+
+.block{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.block .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.block .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.block .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.block .card h4{
+    font-weight: 600;
+}
+
+.block .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.block .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+	color: #3b5167;
+    margin-top: 100px;
+}
+
+/*GRID STYLES
+.zone {
+    padding:30px 50px;
+    margin:40px 60px;
+    cursor:pointer;
+    display:inline-block;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.blue{
+    background: #7abcff; 
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); 
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+}
+
+.grid-wrapper{
+	display:grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+}
+
+.box > img {
+	width:100%;
+}
+
+.box{
+	background-color: #444;
+	padding:15px;
+	margin:5px;
+}*/

@@ -1,50 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>WorkDaniel</title>
-	<!-- Reference to stylesheet style.css -->
-	<link rel="stylesheet" type="text/css" href="stylefour.css">
+	<head>
+		<title>WorkDaniel</title>
+		<!-- Reference to stylesheet style.css -->
+		<link rel="stylesheet" type="text/css" href="style.css">
 
-	<!-- Required meta tags for device display-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Required meta tags for device display-->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+	    <!-- Required meta tags for Wildcards-->
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="index.html">Home</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="about.html">About</a>
-	      </li>
-	      <li class="nav-item">
-	      	<a class="nav-link" href="skills.html">Skills</a>
-	      </li>
-	      <li class="nav-item active">
-	      	<a class="nav-link" href="work.html">My work</a>
-	      </li>
-	      	<a class="nav-link" href="#">Contact</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
+	    <!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
 
-	<div class="container">
-		<img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg">
-		<img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg">
-		<img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg">
-		<img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg">
-		<img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg">
-		<img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg">
-	</div>
-</body>
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	</head>
+
+	<body id="page-work">
+		<!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">DANIEL PORTFOLIO</a>
+
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu
+                <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="skills.html">Skills</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="work.html">Work</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://mailchi.mp/61c02eb3566d/daniel-portfolio">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="title"><strong>Projects and other stuff</strong></h1>
+
+        <!-- Portfolio Section-->
+       	<div class="block">
+	        <div class="card">
+	            <img src="robot.png">
+	            <h4>Bluetooth R2D2 </h4>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+	            <a href="#">View more</a>
+	        </div>
+	        
+	        <div class="card">
+	            <img src="arm.png">
+	            <h4>Master/ Slave Robot Arm</h4>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+	            <a href="#">View more</a>
+	        </div>
+	        
+	        <div class="card">
+	            <img src="car.png">
+	            <h4>Phone Controlled Car</h4>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+	            <a href="#">View more</a>
+	        </div>
+
+	         <div class="card">
+	            <img src="plane.png">
+	            <h4>Giant RC Airplane</h4>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+	            <a href="#">View more</a>
+	        </div>
+
+	         <div class="card">
+	            <img src="house.png">
+	            <h4>Domotic Application</h4>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+	            <a href="#">View more</a>
+	        </div>
+
+	         <div class="card">
+	            <img src="factory.png">
+	            <h4>Conveyor Belt</h4>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+	            <a href="#">View more</a>
+	        </div>
+	    </div>
+
+        <!-- Portfolio Section
+        <div class="zone blue grid-wrapper">
+        	<div class="box zone"><img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg"></div>
+        	<div class="box zone"><img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg"></div>
+        	<div class="box zone"><img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg"></div>
+        	<div class="box zone"><img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg"></div>
+        	<div class="box zone"><img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg"></div>
+        	<div class="box zone"><img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg"></div>
+        </div>-->
+
+        <!--
+		<div class="container">
+			<img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg">
+			<img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg">
+			<img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg">
+			<img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg">
+			<img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg">
+			<img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg">
+		</div>
+		-->
+
+	</body>
 </html>
