@@ -144,22 +144,65 @@ p {
   margin-top: 100px;
 }
 
+/*MOBILE PORTRAIT (320X480)*/
 @media only screen and (max-width: 600px){
-
   #page-home {
     background: #d7dbe4;
   }
-
   #page-about {
     background: #f3efee;
   }
-
   #page-skills {
     background: #f3f3f3;
   }
-
   #mainNav .navbar-brand {
     font-size: 1rem;
     padding: 0;
   }
+
+  /*HOME*/
+  .hi {
+    font-size: 1.8rem;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .job {
+    font-size: 1.8rem;
+  }
+  .description
+  {
+    margin-top: 0rem;
+    margin-bottm: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  /*ABOUT ME*/
+  .nobr br {
+    display: none;
+  }
+  .aboutme {
+    margin-top: 2.5rem;
+  }
+
+  /*EXPERIENCE*/
+
+
+
+
+
+
+
 }
+
+/*MOBILE LANDSCAPE (480X320)*/
+
+/*MOBILE PORTRAIT (320X480)*/
+
+/*SMALL TABLET PORTRAIT (600X800)*/
+
+/*SMALL TABLET LANDSCAPE (800X600)*/
+
+/*TABLET PORTRAIT (768X1024)*/
+
+/*TABLET LANDSCAPE (1024X768)*/
