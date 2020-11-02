@@ -1,10 +1,3 @@
-/*ADJUST MARGINS OF BODY*/
-body, html {
-	margin:auto 0;
-	width:100%;
-	height:100%;
-}
-
 /*ADJUST IMAGE TO BACKGROUND*/
 #page-home{
 	background: url(header.jpg) no-repeat center center fixed; 
@@ -16,7 +9,11 @@ body, html {
 
 /*ADJUST IMAGE TO BACKGROUND*/
 #page-about{
-	background: url(headertwo.jpg) no-repeat center center fixed; 
+	background: 
+  linear-gradient(rgba(255,255,255,0.4),
+  rgba(255,255,255,0.4)),
+  url(headertwo.jpg) 
+  no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
  	-o-background-size: cover;
@@ -32,19 +29,22 @@ body, html {
   background-size: cover;
 }
 
+/*ADJUST MARGINS OF BODY
+body{
+  margin:auto 0;
+  width:100%;
+  height:100%;
+}*/
+
 /*MAIN STYLES FOR HEADER AND PARAGRAPH*/
 h1 {
 	font-size: 3rem;
 	color: #3b5167;
 }
-p {
-	font-size:.95rem;
-	color:#3b5167;
-}
 
-/*NAV BAR STYLES*/
-.buffer{
-	height: 2rem;
+p {
+	font-size:1.15rem;
+	color:#3b5167;
 }
 
 /*CONTACT ME BUTTON*/
@@ -76,6 +76,7 @@ p {
 #mainNav .navbar-nav {
   margin-top: 0.5rem;
 }
+
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: white;
 }
@@ -143,4 +144,22 @@ p {
   margin-top: 100px;
 }
 
+@media only screen and (max-width: 600px){
 
+  #page-home {
+    background: #d7dbe4;
+  }
+
+  #page-about {
+    background: #f3efee;
+  }
+
+  #page-skills {
+    background: #f3f3f3;
+  }
+
+  #mainNav .navbar-brand {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
