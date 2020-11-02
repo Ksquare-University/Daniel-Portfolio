@@ -144,8 +144,8 @@ p {
   margin-top: 100px;
 }
 
-/*MOBILE PORTRAIT (320X480)*/
-@media only screen and (max-width: 370px){
+/*MOBILE PORTRAIT*/
+@media only screen and (max-width: 420px){
   #page-home {
     background: #d7dbe4;
   }
@@ -191,8 +191,8 @@ p {
   }
 }
 
-/*MOBILE LANDSCAPE (480X320)*/
-@media only screen and (max-width: 550px){
+/*MOBILE LANDSCAPE*/
+@media only screen and (max-width: 900px){
   #page-home {
     background: #d7dbe4;
   }
@@ -232,5 +232,12 @@ p {
     margin-top: 4rem;
   }
 
+  /*EXPERIENCE*/
+  .skills-margin {
+    margin-top: 7rem;
+  }
 }
+
+/*MOBILE LANDSCAPE (480X320)*/
+@media only screen and (max-width: 550px){
 
